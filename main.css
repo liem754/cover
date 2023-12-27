@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Lexend", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --width: 1200px;
+  --text-color: #f0f3fd;
+  --text-color1: #1b1c57;
+  --green-100: #d1fae5;
+  --green-700: #047857;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: var(--width);
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar-logo__title {
+  color: var(--text-color1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-list__item {
+  padding: 8px 16px;
+  border-radius: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.navbar__list a {
+  color: var(--text-color);
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.image {
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  z-index: -1;
+}
+.image img {
+  width: 720px;
+  height: 720px;
+}
+.navbar__content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar-content__btn {
+  display: inline-flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--green-100);
+  border: none;
+  outline: none;
+}
+.navbar-content__btn button {
+  color: var(--green-700);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+}
+.content {
+  width: var(--width);
+}
+.content__title {
+  font-family: "Lexend", sans-serif;
+  color: var(--text-color1);
+  font-size: 40px;
+  width: 496px;
+  padding-right: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.content__title p {
+  font-family: "Lexend", sans-serif;
+
+  display: inline;
+  color: transparent;
+  /* text-shadow: 1px 2px #1b1c57; */
+  -webkit-text-stroke: 1px var(--text-color1);
+}
